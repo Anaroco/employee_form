@@ -1,14 +1,26 @@
-var aplicacion= new function(){
+let aplicacion= new function(){
 
-    this.empleados=document.getElementById("empleados")
+    this.nombre= document.getElementById("nombre");
+    this.correo= document.getElementById("correo");
 
-    this.read=function(){
-        var datos="";
+
+    this.empleados= document.getElementById("empleados")
+
+    this.Read=function(){
+        let datos="";
         datos="<tr><td>Id</td><td>Oscar</td><td>oscar@gmail.com</td><td>Editar | Borrar</td></tr>";
 
         return this.empleados.innerHTML=datos;
-    }
+    };
+
+     this.Add=function(){
+
+        console.log (nombre.value);
+        console.log (correo.value);
+
+     };
+
         
 }
 
-aplicacion.read();
+aplicacion.Read();
